@@ -393,12 +393,11 @@
          ]
       }
    },
-   "name": "master",
+   "name": "build_on_tags",
    "on": {
       "push": {
-         "branches": [
-            "main",
-            "master"
+         "tags": [
+            "*"
          ]
       }
    }

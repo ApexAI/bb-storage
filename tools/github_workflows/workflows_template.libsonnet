@@ -170,9 +170,9 @@
           [
             {
               name: 'Install Docker credentials',
-              run: 'echo "${GITHUB_TOKEN}" | docker login ghcr.io -u $ --password-stdin',
+              run: 'echo "${APEXAI_CUSTOMER_TOKEN}" | docker login registry-customer.apex.ai -u $ --password-stdin',
               env: {
-                GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}',
+                APEXAI_CUSTOMER_TOKEN: '${{ secrets.APEXAI_CUSTOMER_TOKEN }}',
               },
             },
           ] + [
